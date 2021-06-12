@@ -9,7 +9,7 @@ Public Class Form2
     Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Dim Frm1 As New Form1
         ToolStripStatusLabel4.Text = Now()
-        ToolStripStatusLabel2.Text = Frm1.UserName.Text
+        'ToolStripStatusLabel2.Text = Frm1.UserName.Text
         Me.Refresh()
         Button1.PerformClick()
         Timer2.Start()
@@ -75,5 +75,13 @@ Public Class Form2
         Hide()
         Dim Frg As New FrmRegistration
         Frg.Show()
+    End Sub
+
+    Private Sub ToolStripStatusLabel2_Click(sender As Object, e As EventArgs) Handles ToolStripStatusLabel2.Click
+
+    End Sub
+
+    Private Sub DistributersToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles DistributersToolStripMenuItem1.Click
+
     End Sub
 End Class

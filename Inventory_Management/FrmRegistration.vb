@@ -202,13 +202,13 @@ Public Class FrmRegistration
                 Exit Sub
             End If
             If UserName.Items.Count > 0 Then
-                If MsgBox("Do you really want to delete this record?", MsgBoxStyle.YesNo Or MsgBoxStyle.Question) = MsgBoxResult.Yes Then
-                    Delete_records()
+
+                Delete_records()
 
                     Delete.Enabled = False
                     Update_Record.Enabled = False
                     fillcombo()
-                End If
+
             End If
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)

@@ -55,6 +55,7 @@ Partial Class FrmRegistrationDetails
         Me.ClientSize = New System.Drawing.Size(439, 317)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.DataGridView1)
+        Me.MaximizeBox = False
         Me.Name = "FrmRegistrationDetails"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmRegistrationDetails"

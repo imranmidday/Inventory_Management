@@ -23,8 +23,8 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.forgot_password_link = New System.Windows.Forms.LinkLabel()
-        Me.register_button = New System.Windows.Forms.Button()
         Me.login_button = New System.Windows.Forms.Button()
         Me.Password = New System.Windows.Forms.TextBox()
         Me.UserName = New System.Windows.Forms.TextBox()
@@ -39,8 +39,8 @@ Partial Class Form1
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Panel1.Controls.Add(Me.LinkLabel1)
         Me.Panel1.Controls.Add(Me.forgot_password_link)
-        Me.Panel1.Controls.Add(Me.register_button)
         Me.Panel1.Controls.Add(Me.login_button)
         Me.Panel1.Controls.Add(Me.Password)
         Me.Panel1.Controls.Add(Me.UserName)
@@ -52,40 +52,47 @@ Partial Class Form1
         Me.Panel1.Size = New System.Drawing.Size(350, 245)
         Me.Panel1.TabIndex = 0
         '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.LinkLabel1.Location = New System.Drawing.Point(225, 202)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(63, 15)
+        Me.LinkLabel1.TabIndex = 8
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "User Login"
+        '
         'forgot_password_link
         '
         Me.forgot_password_link.AutoSize = True
-        Me.forgot_password_link.Location = New System.Drawing.Point(222, 134)
+        Me.forgot_password_link.Location = New System.Drawing.Point(193, 148)
         Me.forgot_password_link.Name = "forgot_password_link"
         Me.forgot_password_link.Size = New System.Drawing.Size(95, 15)
         Me.forgot_password_link.TabIndex = 7
         Me.forgot_password_link.TabStop = True
         Me.forgot_password_link.Text = "Forgot Password"
         '
-        'register_button
-        '
-        Me.register_button.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.register_button.Location = New System.Drawing.Point(239, 172)
-        Me.register_button.Name = "register_button"
-        Me.register_button.Size = New System.Drawing.Size(75, 28)
-        Me.register_button.TabIndex = 6
-        Me.register_button.Text = "Register"
-        Me.register_button.UseVisualStyleBackColor = True
-        '
         'login_button
         '
-        Me.login_button.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.login_button.Location = New System.Drawing.Point(102, 172)
+        Me.login_button.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.login_button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.login_button.FlatAppearance.BorderSize = 5
+        Me.login_button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.login_button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua
+        Me.login_button.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.login_button.Location = New System.Drawing.Point(73, 171)
         Me.login_button.Name = "login_button"
-        Me.login_button.Size = New System.Drawing.Size(75, 28)
+        Me.login_button.Size = New System.Drawing.Size(215, 28)
         Me.login_button.TabIndex = 5
         Me.login_button.Text = "LOGIN"
-        Me.login_button.UseVisualStyleBackColor = True
+        Me.login_button.UseVisualStyleBackColor = False
         '
         'Password
         '
         Me.Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Password.Location = New System.Drawing.Point(102, 108)
+        Me.Password.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Password.Location = New System.Drawing.Point(73, 122)
         Me.Password.Name = "Password"
         Me.Password.Size = New System.Drawing.Size(212, 23)
         Me.Password.TabIndex = 4
@@ -94,7 +101,8 @@ Partial Class Form1
         'UserName
         '
         Me.UserName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.UserName.Location = New System.Drawing.Point(102, 64)
+        Me.UserName.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.UserName.Location = New System.Drawing.Point(73, 78)
         Me.UserName.Name = "UserName"
         Me.UserName.Size = New System.Drawing.Size(212, 23)
         Me.UserName.TabIndex = 3
@@ -103,7 +111,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(30, 114)
+        Me.Label3.Location = New System.Drawing.Point(73, 102)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(66, 17)
         Me.Label3.TabIndex = 2
@@ -113,7 +121,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.Location = New System.Drawing.Point(30, 70)
+        Me.Label2.Location = New System.Drawing.Point(73, 58)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 17)
         Me.Label2.TabIndex = 1
@@ -123,11 +131,11 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(157, 19)
+        Me.Label1.Location = New System.Drawing.Point(96, 19)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(74, 30)
+        Me.Label1.Size = New System.Drawing.Size(150, 30)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "LOGIN"
+        Me.Label1.Text = "ADMIN LOGIN"
         '
         'Label4
         '
@@ -158,6 +166,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inventory Management"
@@ -169,7 +178,6 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents register_button As Button
     Friend WithEvents login_button As Button
     Friend WithEvents Password As TextBox
     Friend WithEvents UserName As TextBox
@@ -179,4 +187,5 @@ Partial Class Form1
     Friend WithEvents forgot_password_link As LinkLabel
     Friend WithEvents Label4 As Label
     Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class

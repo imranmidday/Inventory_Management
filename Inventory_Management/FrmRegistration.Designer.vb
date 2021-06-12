@@ -237,6 +237,7 @@ Partial Class FrmRegistration
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label1)
+        Me.MaximizeBox = False
         Me.Name = "FrmRegistration"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Registration"

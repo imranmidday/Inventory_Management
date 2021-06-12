@@ -66,7 +66,7 @@ Partial Class Form2
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RegistrationToolStripMenuItem1, Me.DistributersToolStripMenuItem1, Me.VendorToolStripMenuItem, Me.ProductToolStripMenuItem1, Me.StockToolStripMenuItem, Me.OrderToolStripMenuItem, Me.InvoiceToolStripMenuItem, Me.LogoutToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 24)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(892, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(740, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -123,7 +123,7 @@ Partial Class Form2
         Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsersToolStripMenuItem, Me.DistributersToolStripMenuItem, Me.VendorsToolStripMenuItem, Me.ProductToolStripMenuItem})
         Me.MenuStrip2.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip2.Name = "MenuStrip2"
-        Me.MenuStrip2.Size = New System.Drawing.Size(892, 24)
+        Me.MenuStrip2.Size = New System.Drawing.Size(740, 24)
         Me.MenuStrip2.TabIndex = 1
         Me.MenuStrip2.Text = "MenuStrip2"
         '
@@ -207,7 +207,7 @@ Partial Class Form2
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.ToolStripStatusLabel2, Me.ToolStripStatusLabel3, Me.ToolStripStatusLabel4})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 483)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(892, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(740, 22)
         Me.StatusStrip1.TabIndex = 2
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -222,13 +222,13 @@ Partial Class Form2
         '
         Me.ToolStripStatusLabel2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.ToolStripStatusLabel2.Name = "ToolStripStatusLabel2"
-        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(128, 17)
-        Me.ToolStripStatusLabel2.Text = "ToolStripStatusLabel2"
+        Me.ToolStripStatusLabel2.Size = New System.Drawing.Size(52, 17)
+        Me.ToolStripStatusLabel2.Text = "No User"
         '
         'ToolStripStatusLabel3
         '
         Me.ToolStripStatusLabel3.Name = "ToolStripStatusLabel3"
-        Me.ToolStripStatusLabel3.Size = New System.Drawing.Size(550, 17)
+        Me.ToolStripStatusLabel3.Size = New System.Drawing.Size(474, 17)
         Me.ToolStripStatusLabel3.Spring = True
         '
         'ToolStripStatusLabel4
@@ -241,7 +241,7 @@ Partial Class Form2
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(12, 68)
+        Me.Label1.Location = New System.Drawing.Point(3, 70)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(71, 21)
         Me.Label1.TabIndex = 3
@@ -259,17 +259,17 @@ Partial Class Form2
         '
         Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 95)
+        Me.DataGridView1.Location = New System.Drawing.Point(4, 96)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 25
-        Me.DataGridView1.Size = New System.Drawing.Size(729, 385)
+        Me.DataGridView1.Size = New System.Drawing.Size(731, 385)
         Me.DataGridView1.TabIndex = 5
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(892, 505)
+        Me.ClientSize = New System.Drawing.Size(740, 505)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
@@ -277,6 +277,7 @@ Partial Class Form2
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.MenuStrip2)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Inventory Main Menu"

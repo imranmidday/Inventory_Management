@@ -2,7 +2,7 @@
 Imports System.Data.OleDb
 Public Class Form1
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles register_button.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         Hide()
         Dim Frg As New FrmRegistration
         Frg.Show()
@@ -104,5 +104,11 @@ Public Class Form1
 
     Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         End
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked_1(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Hide()
+        Dim Ulog As New userLogin
+        Ulog.Show()
     End Sub
 End Class
